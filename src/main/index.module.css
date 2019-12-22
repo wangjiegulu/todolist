@@ -1,0 +1,18 @@
+body{
+    background-color: #FF4C51;
+}
+
+.root{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 120px;
+}
+.title{
+    font-size: 30px;
+    color: #ffffff;
+    line-height: 1;
+}
