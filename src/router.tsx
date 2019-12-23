@@ -1,5 +1,5 @@
 import React from 'react'
-import {HashRouter as Router, Route, Link, Switch} from 'react-router-dom'
+import {HashRouter as Router, Route, Switch} from 'react-router-dom'
 import Main from './main'
 
 const routers = [
@@ -14,7 +14,7 @@ const router = () => {
         <Router>
             <Switch>
               {routers.map((item, index)=>{
-                return <Route exact path={item.path} component={item.component} />
+                return <Route key={item.path} exact path={item.path} component={item.component} />
               })}
             </Switch>
         </Router>
